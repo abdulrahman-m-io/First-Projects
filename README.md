@@ -1,5 +1,5 @@
 # First-P-First
 
-This Repo Is For First Week Of First Phase IN Our Programming Journey
+# Hello and Welcome to our Repo
 
-this is a test for a commit and pull request
+## Here we will upload our assignments so we can all see our codes and pages
