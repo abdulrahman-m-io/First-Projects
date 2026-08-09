@@ -1,3 +1,22 @@
 body {
   text-align: center;
 }
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #04cdff;
+}
+
+td {
+  background-color: #d1c9c9;
+}
+
+td:hover {
+  background-color: #189dbe;
+  margin: 10px;
+  size: 20px;
+}
