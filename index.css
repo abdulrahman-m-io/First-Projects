@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  background-color: #1fcdf8;
 }
 
 table {
@@ -19,4 +20,21 @@ td:hover {
   background-color: #189dbe;
   margin: 10px;
   size: 20px;
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #23db3b;
+  padding: 10px 80px;
+  border: solid 1px #23db3b;
+  border-radius: 20px;
+  margin: 10px 0px;
 }
