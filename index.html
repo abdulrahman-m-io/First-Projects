@@ -10,56 +10,80 @@
 
     <body>
       <form class="form" method="get">
-        <h2>عبدالرحمن محمد</h2>
+        <h2>
+          عبدالرحمن محمد
+          <img src="me.jpg" alt="Profile Image" />
+        </h2>
         <h4>
           <p>مبرمج شغوف ومهتم ببرمجة المواقع الالكترونية</p>
         </h4>
-        <input
-          id="name"
-          type="text"
-          required
-          placeholder="أدخل اسمك"
-          name="name"
-        />
-        <label for="name">الاسم</label>
+        <div>
+          <li class="xp-btns">HTML</li>
+          <li class="xp-btns">CSS</li>
+          <li class="xp-btns">JavaScript</li>
+        </div>
         <br />
-        <input
-          id="gmail"
-          type="email"
-          required
-          name="gmail"
-          placeholder="أدخل بريدك الإلكتروني"
-        />
-        <label for="gmail">البريد الإلكتروني</label>
+        <div class="name-box">
+          <input
+            id="name"
+            type="text"
+            required
+            placeholder="أدخل اسمك"
+            name="name"
+          />
+          <label for="name">الاسم</label>
+        </div>
         <br />
-        <button type="submit">إرسال</button>
+        <div class="gmail-box">
+          <input
+            id="gmail"
+            type="email"
+            required
+            name="gmail"
+            placeholder="أدخل بريدك الإلكتروني"
+          />
+          <label for="gmail">البريد الإلكتروني</label>
+        </div>
+        <br />
+        <div class="info-box">
+          <textarea
+            name="info"
+            required
+            placeholder="اكتب رسالتك هنا"
+          ></textarea>
+        </div>
+        <br />
+        <button class="submit-btn" type="submit">إرسال</button>
       </form>
-      <table>
-        <thead>
-          <tr>
-            <th>المدة</th>
-            <th>اللغة</th>
-            <th>الاسبوع</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>4</td>
-            <td>HTML</td>
-            <td>الاول</td>
-          </tr>
-          <tr class="row">
-            <td>3</td>
-            <td>CSS</td>
-            <td>الثاني</td>
-          </tr>
-          <tr class="row">
-            <td>3</td>
-            <td>JavaScript</td>
-            <td>الثالث</td>
-          </tr>
-        </tbody>
-      </table>
+
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>المدة</th>
+              <th>اللغة</th>
+              <th>الاسبوع</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>4</td>
+              <td>HTML</td>
+              <td>الاول</td>
+            </tr>
+            <tr class="row">
+              <td>3</td>
+              <td>CSS</td>
+              <td>الثاني</td>
+            </tr>
+            <tr class="row">
+              <td>3</td>
+              <td>JavaScript</td>
+              <td>الثالث</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </body>
   </html>
 </html>
