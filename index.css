@@ -89,4 +89,5 @@ textarea {
   border-color: #b5c5b7;
   margin-right: 30px;
   height: 80px;
+  resize: none;
 }
