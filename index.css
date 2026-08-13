@@ -69,6 +69,7 @@ input {
   padding: 5px 10px;
   margin: 5px 3px;
   display: inline-flex;
+  text-shadow: 1px 1px 1px rgba(32, 32, 32, 0.726);
 }
 
 .xp-btns:hover {
