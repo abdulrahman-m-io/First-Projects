@@ -2,4 +2,37 @@
   font-size: 20px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+  position: relative;
+  top: 3vh;
+}
+
+header {
+  background-color: #d84e4e;
+  border: 1px solid black;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+}
+
+.link-btns {
+  position: relative;
+  display: inline;
+}
+header a {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: 0 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid blue;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+header a:hover {
+  background-color: blue;
+  color: red;
+  transition: 0.5s;
 }
