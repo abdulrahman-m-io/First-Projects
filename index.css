@@ -15,24 +15,45 @@ header {
 }
 
 .link-btns {
-  position: relative;
+  list-style: none;
   display: inline;
+  position: relative;
 }
+
 header a {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  margin: 0 20px;
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  left: 400px;
+  top: 10%;
+  margin: 5px 20px;
   padding: 10px 20px;
   text-decoration: none;
   border: 1px solid blue;
   border-radius: 20px;
   font-size: 15px;
   font-weight: 800;
+  width: 60px;
 }
 
 header a:hover {
   background-color: blue;
   color: red;
+  transition: 0.5s;
+}
+
+header a::before {
+  content: "";
+  position: absolute;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 10px;
+  width: 0;
+  height: 0;
+  top: 20px;
+}
+
+header a:hover::before {
+  border-color: transparent transparent yellow transparent;
   transition: 0.5s;
 }
