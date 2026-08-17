@@ -34,6 +34,7 @@ header a {
   font-size: 15px;
   font-weight: 800;
   width: 60px;
+  transition: 0.3s;
 }
 
 header a:hover {
@@ -55,5 +56,24 @@ header a::before {
 
 header a:hover::before {
   border-color: transparent transparent yellow transparent;
+  transform: translateY(20px);
   transition: 0.5s;
+}
+
+header a::after {
+  content: "";
+  position: absolute;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 2px 45px;
+  width: 0;
+  height: 0;
+  top: 35px;
+  left: 80px;
+}
+
+header a:hover::after {
+  border-color: rgb(255, 0, 242);
+  transition: 0.8s;
+  transform: translateX(-75px);
 }
