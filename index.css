@@ -1,79 +1,43 @@
-.logo-txt {
-  font-size: 20px;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  position: relative;
-  top: 3vh;
+html,
+body {
+  width: fit-content;
+  padding: 0;
+  margin: 2px 0;
 }
 
 header {
-  background-color: #d84e4e;
-  border: 1px solid black;
-  height: 10vh;
+  background-color: rgb(31, 235, 235);
+  height: 55px;
+  padding: 0 10px;
   position: sticky;
   top: 0;
+  margin: 0;
+  display: flex;
 }
 
-.link-btns {
-  list-style: none;
-  display: inline;
-  position: relative;
+.logo-txt {
+  font-weight: bold;
+  font-size: 30px;
 }
 
-header a {
-  display: inline-flex;
-  position: relative;
-  justify-content: center;
-  left: 400px;
-  top: 10%;
-  margin: 5px 20px;
-  padding: 10px 20px;
+.links a {
   text-decoration: none;
-  border: 1px solid blue;
+  margin: 0 20px;
+  position: relative;
+  left: 410px;
+  top: 18px;
+  color: rgb(195, 0, 255);
+  font-weight: bold;
+  font-size: 18px;
+  border: 1px solid rgb(204, 0, 255);
+  padding: 10px 15px;
   border-radius: 20px;
-  font-size: 15px;
-  font-weight: 800;
-  width: 60px;
   transition: 0.3s;
 }
 
-header a:hover {
-  background-color: blue;
-  color: red;
-  transition: 0.5s;
-}
-
-header a::before {
-  content: "";
-  position: absolute;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 10px;
-  width: 0;
-  height: 0;
-  top: 20px;
-}
-
-header a:hover::before {
-  border-color: transparent transparent yellow transparent;
-  transform: translateY(20px);
-  transition: 0.5s;
-}
-
-header a::after {
-  content: "";
-  position: absolute;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 2px 45px;
-  width: 0;
-  height: 0;
-  top: 35px;
-  left: 80px;
-}
-
-header a:hover::after {
-  border-color: rgb(255, 0, 242);
-  transition: 0.8s;
-  transform: translateX(-75px);
+.links a:hover {
+  background-color: rgb(195, 0, 255);
+  color: #fff;
+  transition: 0.3s;
+  box-shadow: 0 0 6px 0px #000000a6;
 }
