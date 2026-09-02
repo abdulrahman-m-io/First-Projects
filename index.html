@@ -3,49 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <title>Project 1</title>
   </head>
   <body>
     <header>
-      <span class="logo-txt">Welcome To My Portoflio</span>
-      <span class="c-links">
-        <a class="links" href="#1">Home</a>
-        <a class="links" href="#2">About</a>
-        <a class="links" href="#3">Projects</a>
-        <a class="links" href="index.html">Contact</a>
+      <img src="/imgs/logo.png" alt="" />
+      <span class="nav">
+        <span></span>
+        <span></span>
+        <span></span>
       </span>
+      <ul class="links">
+        <li></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
     </header>
-    <div class="wrapper" id="1">
-      <div class="me">
-        <h1 class="me-txt">
-          AbdulRahman Mohamed <br />
-          Full Stack Developer!
-        </h1>
-        <div>
-          <img class="me-img" src="imgs/me.jpg" alt="couldnt load the image!" />
+    <div class="landing">
+      <h1 class="center">Hello There</h1>
+      <h2 class="center">
+        We are Leon - Super Creative & Minimal Agency Web Template
+      </h2>
+    </div>
+    <div class="features">
+      <div class="f-one">
+        <i class="fa-regular fa-comments"></i>
+        <h3>Tell Us Your Idea</h3>
+        <span
+          >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, ab
+          dolore voluptatum exercitationem eos perspiciatis id iste accusamus
+        </span>
+      </div>
+      <div class="f-two">
+        <i class="fa-solid fa-code"></i>
+        <h3>We Will Do All The Work</h3>
+        <span
+          >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, ab
+          dolore voluptatum exercitationem eos perspiciatis id iste accusamus
+        </span>
+      </div>
+      <div class="f-three">
+        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        <h3>Your Product is Worldwide</h3>
+        <span
+          >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, ab
+          dolore voluptatum exercitationem eos perspiciatis id iste accusamus
+        </span>
+      </div>
+    </div>
+    <div id="services" class="services">
+      <span class="title center">Services</span>
+      <span class="sub-title center">Don't be busy, be productive </span>
+      <div class="services-box">
+        <img src="/imgs/services.jpg" alt="Service" />
+        <div class="s-box1">
+          <i class="fa-solid fa-circle-user"></i>
+          <span>Graphic Design</span>
+          <div>
+            Graphic design is the process of visual communication and
+            problem-solving using one or more of typography, photography and
+            illustration.
+          </div>
+        </div>
+        <div class="s-box2">
+          <i class="fa-solid fa-icons"></i>
+          <span>Web Design</span>
+          <div>
+            Web design encompasses many different skills and disciplines in the
+            production and maintenance of websites.
+          </div>
+        </div>
+        <div class="s-box3">
+          <i class="fa-solid fa-laptop-code"></i>
+          <span> UI & UX</span>
+          <div>
+            Process of enhancing user satisfaction with a product by improving
+            the usability, accessibility, and pleasure provided in the
+            interaction.
+          </div>
+        </div>
+        <div class="s-box4">
+          <i class="fa-brands fa-square-js"></i>
+          <span>Web Development</span>
+          <div>
+            Web development is a broad term for the work involved in developing
+            a web site for the Internet or an intranet.
+          </div>
         </div>
       </div>
-      <div class="about-box">
-        <span class="about-txt" id="2"> About </span>
-        <div class="about-content">
-          <h2>
-            I am 20 year old <br />
-            <br />since i was a kid i have been passionate of programming<br />
-            <br />and since you are seeing this that means i have achieved one
-            of my goals!
-          </h2>
+    </div>
+    <div id="portfolio" class="portfolio">
+      <span class="title center">Portfolio</span>
+      <span class="sub-title center"
+        >If you do it right, it will last forever.
+      </span>
+      <div class="projects">
+        <div class="p-box1">
+          <img src="/imgs/portfolio-1.jpg" alt="Project 1" />
+          <span>Project 1</span>
+          <div>
+            My creative ability is very difficult to measure because it can
+            manifest in so many surprising and.
+          </div>
         </div>
-      </div>
-      <div class="pro-box">
-        <span class="pro-txt" id="3"> Projects </span>
-        <div class="pro-content">
+        <div class="p-box2">
+          <img src="/imgs/portfolio-2.jpg" alt="Project 2" />
+          <span>Project 2</span>
+          <div>
+            My creative ability is very difficult to measure because it can
+            manifest in so many surprising and.
+          </div>
+        </div>
+        <div class="p-box3">
+          <img src="/imgs/portfolio-3.jpg" alt="Project 3" />
+          <span>Project 3</span>
+          <div>
+            My creative ability is very difficult to measure because it can
+            manifest in so many surprising and.
+          </div>
+        </div>
       </div>
     </div>
   </body>
