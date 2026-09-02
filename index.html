@@ -19,8 +19,8 @@
         <li></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </header>
     <div class="landing">
@@ -128,7 +128,7 @@
         </div>
       </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
       <div class="title center">About</div>
       <span class="sub-title center">Less is more work</span>
       <span
@@ -145,22 +145,22 @@
       >
       <img src="imgs/about.jpg" alt="ds" />
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
       <div class="c-box">
         <span class="center">Contact</span>
         <span class="center">We are born to create</span>
         <form action="https://google.com" target="_blank" method="get">
           <div class="name">
-            <label for="hello">Full Name</label>
-            <input type="text" id="hello" />
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required />
           </div>
           <br />
           <div class="gmail">
             <label for="gmail">Gmail</label>
-            <input type="mail" id="gmail" />
+            <input type="email" id="gmail" required />
           </div>
           <br />
-          <textarea placeholder="write here"></textarea>
+          <textarea placeholder="write here" required></textarea>
           <br />
           <button class="first-btn" type="button">Confirm</button>
           <button class="sec-btn" type="submit">Send</button>

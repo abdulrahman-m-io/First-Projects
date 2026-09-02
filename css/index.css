@@ -698,6 +698,20 @@ form:has(.first-btn:focus) .sec-btn {
   animation: show 1s cubic-bezier(0.65, 0.05, 0.36, 1) 4.3s 1 forwards;
 }
 
+form:has(.first-btn:focus) input {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #e9ecef;
+}
+
+form:has(.first-btn:focus) textarea {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #e9ecef;
+}
+
 .icons {
   top: 450px;
   transition: 0.5s;
@@ -719,7 +733,27 @@ form:has(.first-btn:focus) .sec-btn {
   transition: 0.5s;
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+  .c-box:has(form textarea:focus).c-box .icons {
+    transform: translateY(200px);
+    transform: translateX(-200px);
+    width : 150px;
+    transition: 0.5s;
+  }
+}
+
 .c-box:has(form textarea:focus).c-box .icons i {
   font-size: 25px;
   transition: 0.5s;
+}
+
+form:has(.sec-btn:focus) .first-btn {
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+form:has(.sec-btn:focus) .sec-btn {
+  opacity: 1;
+  z-index: 1;
 }
