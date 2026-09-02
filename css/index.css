@@ -394,7 +394,7 @@ img[src="imgs/logo.png"] {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-bottom: 300px;
+  padding-bottom: 100px;
 }
 
 .about .title {
@@ -465,12 +465,11 @@ img[src="imgs/logo.png"] {
   top: -300px;
   border-bottom: solid red 50px;
   border-left: solid red 80px;
-  padding : 150px 50px;
+  padding: 150px 50px;
 }
 
 @media (min-width: 300px) and (max-width: 1024px) {
-
-  .about img{
+  .about img {
     visibility: hidden;
   }
   .about span:nth-of-type(3)::after {
@@ -480,12 +479,247 @@ img[src="imgs/logo.png"] {
     visibility: hidden;
   }
   .about span:not(span:nth-of-type(1)) {
-    margin-right : 0;
-    width : 400px;
+    margin-right: 0;
+    width: 400px;
   }
   .about span:nth-of-type(2)::after {
-    padding : 180px;
-    top : -180px;
-    right : 40px;
+    padding: 180px;
+    top: -180px;
+    right: 40px;
   }
+}
+
+.contact {
+  background-color: #ffffff;
+  height: 100vh;
+  place-items: center;
+  padding-top: 20px;
+}
+
+.contact .c-box {
+  padding: 10px;
+  height: 500px;
+  width: 600px;
+  background-color: #e1e1e1;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 0 0 0 black;
+}
+
+.contact .c-box span:nth-of-type(1) {
+  font-size: 70px;
+  top: 30px;
+  color: #12f1db;
+  text-shadow: -1px 2px 5px black;
+}
+
+.contact .c-box span:nth-of-type(2) {
+  font-size: 20px;
+  top: 80px;
+  color: rgb(99 97 97);
+}
+
+form {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}
+
+input {
+  outline: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 30px;
+  background-color: #0bebd4;
+  font-size: 18px;
+}
+
+textarea {
+  outline: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  resize: none;
+  height: 30px;
+  overflow: hidden;
+  background-color: #0bebd4;
+  font-size: 18px;
+  width: 180px;
+  transition: 0.5s;
+}
+
+textarea:focus {
+  width: 280px;
+  height: 180px;
+  box-shadow: 11px 10px 13px 0px #0000004d;
+  transition: 0.5s;
+}
+
+.name {
+  padding-right: 80px;
+  transition: 0.5s;
+}
+
+.gmail {
+  padding-right: 45px;
+  transition: 0.5s;
+}
+
+input[type="text"] {
+  width: 100px;
+  transition: 0.5s;
+}
+
+input[type="mail"] {
+  width: 100px;
+  transition: 0.5s;
+}
+
+input:focus {
+  width: 150px;
+  transition: 0.5s;
+  box-shadow: 9px 9px 10px 0px #0000004d;
+}
+
+.gmail input:focus {
+  width: 200px;
+  transition: 0.5s;
+}
+
+form:has(.name input:focus) .name {
+  padding: 0px;
+  transition: 0.5s;
+}
+
+form:has(.gmail input:focus) .gmail {
+  padding: 0px;
+  transition: 0.5s;
+}
+
+button {
+  background-color: #0bebd4;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: 9px 9px 10px 0px #0000004d;
+}
+
+.first-btn:focus {
+  animation-name: click;
+  animation-delay: 0.2s;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+
+.first-btn::after {
+  content: "";
+  border: 1px solid black;
+  position: absolute;
+  width: 114px;
+  height: 43px;
+  inset: -4px;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  border-left-color: #ff0000;
+  border-right-color: #ff0000;
+  visibility: hidden;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.first-btn:focus::after {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  visibility: visible;
+}
+
+.first-btn:focus {
+  animation: show 0.3s cubic-bezier(0.65, 0.05, 0.36, 1) 4s 1 reverse forwards;
+}
+
+.sec-btn {
+  opacity: 0;
+  z-index: -1;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  to {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+.first-btn,
+.sec-btn {
+  position: absolute;
+  bottom: 100px;
+}
+
+form:has(textarea:focus) .first-btn {
+  bottom: 10px;
+  transition: 0.5s;
+}
+
+form:has(textarea:focus) .sec-btn {
+  bottom: 10px;
+  transition: 0.5s;
+}
+
+form:has(.first-btn:focus) .sec-btn {
+  animation: show 1s cubic-bezier(0.65, 0.05, 0.36, 1) 4.3s 1 forwards;
+}
+
+.icons {
+  top: 450px;
+  transition: 0.5s;
+}
+
+.icons i {
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.contact .c-box .icons .follow {
+  font-size: 30px;
+  color: rgb(37, 219, 243);
+}
+
+.c-box:has(form textarea:focus).c-box .icons {
+  transform: translateY(100px);
+  transform: translateX(70px);
+  transition: 0.5s;
+}
+
+.c-box:has(form textarea:focus).c-box .icons i {
+  font-size: 25px;
+  transition: 0.5s;
 }
