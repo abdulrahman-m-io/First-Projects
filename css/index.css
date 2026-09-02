@@ -576,7 +576,7 @@ input[type="text"] {
   transition: 0.5s;
 }
 
-input[type="mail"] {
+input[type="email"] {
   width: 100px;
   transition: 0.5s;
 }
