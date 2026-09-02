@@ -31,7 +31,7 @@ header:has(.links:hover) .nav span:nth-child(2) {
   transition: 0.3s;
 }
 
-img[src="/imgs/logo.png"] {
+img[src="imgs/logo.png"] {
   width: 60px;
   height: 25px;
 }
@@ -345,10 +345,10 @@ img[src="/imgs/logo.png"] {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit,350px);
+  grid-template-columns: repeat(auto-fit, 350px);
   grid-template-rows: repeat(auto-fit, 1fr);
   padding-top: 50px;
-  gap : 20px 20px;
+  gap: 20px 20px;
   justify-content: space-evenly;
 }
 
@@ -374,7 +374,7 @@ img[src="/imgs/logo.png"] {
   display: block;
   font-size: 25px;
   font-weight: 800;
-  margin-bottom : 20px;
+  margin-bottom: 20px;
   margin-left: 20px;
 }
 
@@ -384,5 +384,108 @@ img[src="/imgs/logo.png"] {
 .projects .p-box4 div {
   margin-left: 20px;
   margin-bottom: 40px;
-  font-size : 20px;
+  font-size: 20px;
+}
+
+.about {
+  background-color: #f6f6f6;
+  position: relative;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 300px;
+}
+
+.about .title {
+  font-size: 100px;
+  font-weight: 800;
+  color: #a0a2a3;
+  top: 120px;
+}
+
+.about .sub-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #757373;
+  top: 180px;
+  width: 320px;
+}
+
+.about span:not(span:nth-of-type(1)) {
+  width: 600px;
+  margin: 100px;
+  margin-bottom: 30px;
+}
+
+.about span:nth-of-type(2) {
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+}
+
+.about span:nth-of-type(3) {
+  font-weight: 200;
+  font-size: 19px;
+  position: relative;
+  color: #777;
+}
+
+.about span:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  top: -446px;
+  border-bottom: 3px solid #10cab7;
+  padding: 302px;
+  right: 0;
+}
+
+.about img {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  left: 150px;
+  top: 300px;
+}
+
+.about span:nth-of-type(3)::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 380px;
+  background-color: #c5c5c5;
+  left: -450px;
+  top: -250px;
+}
+
+.about span:nth-of-type(3)::after {
+  content: "";
+  position: absolute;
+  left: -250px;
+  top: -300px;
+  border-bottom: solid red 50px;
+  border-left: solid red 80px;
+  padding : 150px 50px;
+}
+
+@media (min-width: 300px) and (max-width: 1024px) {
+
+  .about img{
+    visibility: hidden;
+  }
+  .about span:nth-of-type(3)::after {
+    visibility: hidden;
+  }
+  .about span:nth-of-type(3)::before {
+    visibility: hidden;
+  }
+  .about span:not(span:nth-of-type(1)) {
+    margin-right : 0;
+    width : 400px;
+  }
+  .about span:nth-of-type(2)::after {
+    padding : 180px;
+    top : -180px;
+    right : 40px;
+  }
 }
